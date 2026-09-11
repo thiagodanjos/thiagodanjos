@@ -11,11 +11,18 @@ Estudante de Programação em Portugal, a aprender a construir aplicações comp
 
 ---
 
-### Em destaque
+### 🎬 Projeto em destaque — LisFilms
 
-**[LisFilms](https://github.com/thiagodanjos/lisfilms)** — rede social de filmes e séries, desenvolvida como Prova de Aptidão Profissional (PAP). App desktop em Python/Tkinter, backend próprio em FastAPI + PostgreSQL, versão web em React e integração com a API da TMDB.
+Rede social de filmes e séries: contas, reviews, feed social, watchlist, cinema partilhado e recomendações. App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP) — o maior projeto que já construí sozinho.
 
-**[LisFilms — Demo](https://github.com/thiagodanjos/lisfilms-demo)** — versão pública standalone, com dados fictícios e sem backend, feita para portefólio. [Ver ao vivo →](https://thiagodanjos.github.io/lisfilms-demo/)
+<div align="center">
+
+[![Visitar site oficial](https://img.shields.io/badge/-Visitar%20lisfilms.pt-1ED760?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://lisfilms.pt)
+[![Ver demo pública](https://img.shields.io/badge/-Ver%20demo%20p%C3%BAblica-121519?style=for-the-badge&logo=github&logoColor=white)](https://thiagodanjos.github.io/lisfilms-demo/)
+
+</div>
+
+O código da versão em produção é privado; a **[demo pública](https://github.com/thiagodanjos/lisfilms-demo)**, feita para portefólio, está disponível para consulta.
 
 ---
 
