@@ -2,8 +2,9 @@
 
 # Olá, sou o Thiago 👋
 
+Nascido e criado em **Mogi das Cruzes, São Paulo, Brasil**, vim para **Leiria, Portugal** aos 11 anos de idade, e já fazem 8 anos desde essa grande mudança.
 **Estudante de Desenvolvimento Web e Multimédia, em Portugal**
-A construir aplicações completas — do backend à interface — e a aprender algo novo em cada projeto.
+a construir aplicações completas — do backend à interface — e a aprender algo novo em cada projeto.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-anjos-b50628376/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thiagodanjos)
