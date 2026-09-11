@@ -23,7 +23,7 @@ A construir aplicações completas — do backend à interface — e a aprender 
 
 ## 🎬 Projeto em destaque — LisFilms
 
-Rede social de filmes e séries: contas, reviews, feed social, watchlist, cinema partilhado e recomendações. App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP) — o maior projeto que já construí sozinho.
+A tua rede social de filmes, séries, animes e jogos: reviews, feed social, watchlist, coleções e maratonas, grupos e mensagens, prémios da comunidade e um hub de jogos próprio (rankings, troféus, LisGaming Wrapped). App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP) — o maior projeto que já construí sozinho.
 
 <div align="center">
 
