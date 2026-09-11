@@ -3,7 +3,7 @@
 # Olá, sou o Thiago 👋
 
 **Estudante de Desenvolvimento Web e Multimédia, em Portugal**
-Nascido e criado em **Mogi das Cruzes, São Paulo, Brasil**, vim para **Leiria, Portugal** aos 11 anos de idade, e já fazem 8 anos desde essa grande mudança.
+\nNascido e criado em **Mogi das Cruzes, São Paulo, Brasil**, vim para **Leiria, Portugal** aos 11 anos de idade, e já fazem 8 anos desde essa grande mudança.
 A construir aplicações completas — do backend à interface — e a aprender algo novo em cada projeto.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-anjos-b50628376/)
