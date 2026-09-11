@@ -36,6 +36,18 @@ O código da versão em produção é privado; a **[demo pública](https://githu
 
 <br>
 
+## 🤖 LisDiscord
+
+App desktop de backup, restauro e gestão de servidores Discord — com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios e mini-jogos.
+
+<div align="center">
+
+[![Ver no GitHub](https://img.shields.io/badge/-Ver%20reposit%C3%B3rio-5865F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thiagodanjos/lisdiscord)
+
+</div>
+
+<br>
+
 ## 🛠️ Tecnologias
 
 **Linguagens**
@@ -52,6 +64,7 @@ O código da versão em produção é privado; a **[demo pública](https://githu
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=python&logoColor=white)
+![discord.js](https://img.shields.io/badge/discord.js-5865F2?style=flat-square&logo=discord&logoColor=white)
 
 **Desktop & Ferramentas**
 ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
