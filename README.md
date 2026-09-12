@@ -39,7 +39,7 @@ O código da versão em produção é privado; a **[demo pública](https://githu
 
 ## 🤖 LisDiscord
 
-App desktop de backup, restauro e gestão de servidores Discord — com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios e mini-jogos.
+App desktop de backup, restauro e gestão de servidores Discord com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios e mini-jogos.
 
 <div align="center">
 
