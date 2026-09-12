@@ -39,11 +39,12 @@ O código da versão em produção é privado; a **[demo pública](https://githu
 
 ## 🤖 LisDiscord
 
-App desktop de backup, restauro e gestão de servidores Discord com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios e mini-jogos.
+App desktop de backup, restauro e gestão de servidores Discord com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios, um sistema de pontos de Mov. Call com painel ao vivo, e 14 mini-jogos (trivia, forca, blackjack, jogo do galo, duelo, roleta, caça-níqueis, corrida e mais) com uma economia de moedas partilhada por servidor.
 
 <div align="center">
 
 [![Ver no GitHub](https://img.shields.io/badge/-Ver%20reposit%C3%B3rio-5865F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thiagodanjos/lisdiscord)
+[![Última versão](https://img.shields.io/github/v/release/thiagodanjos/lisdiscord?style=for-the-badge&color=5865F2&label=vers%C3%A3o)](https://github.com/thiagodanjos/lisdiscord/releases/latest)
 
 </div>
 
