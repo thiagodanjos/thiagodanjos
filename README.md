@@ -4,7 +4,7 @@
 
 Nascido e criado em **Mogi das Cruzes, São Paulo, Brasil**, vim para **Leiria, Portugal** aos 11 anos de idade, e já fazem 8 anos desde essa grande mudança.
 **Estudante de Desenvolvimento Web e Multimédia, em Portugal**
-a construir aplicações completas — do backend à interface — e a aprender algo novo em cada projeto.
+a construir aplicações completas, do backend à interface, e a aprender algo novo em cada projeto.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-anjos-b50628376/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thiagodanjos)
@@ -17,14 +17,14 @@ a construir aplicações completas — do backend à interface — e a aprender 
 
 | | |
 |---|---|
-| **Atual** | TeSP em Desenvolvimento Web e Multimédia — Universidade de Leiria e Oeste |
+| **Atual** | TeSP em Desenvolvimento Web e Multimédia - Universidade de Leiria e Oeste |
 | **Concluído** | Curso Profissional de Técnico de Gestão e Programação de Sistemas Informáticos |
 
 <br>
 
-## 🎬 Projeto em destaque — LisFilms
+## 🎬 Projeto em destaque | LisFilms
 
-A tua rede social de filmes, séries, animes e jogos: reviews, feed social, watchlist, coleções e maratonas, grupos e mensagens, prémios da comunidade e um hub de jogos próprio (rankings, troféus, LisGaming Wrapped). App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP) — o maior projeto que já construí sozinho.
+A tua rede social de filmes, séries, animes e jogos: reviews, feed social, watchlist, coleções e maratonas, grupos e mensagens, prémios da comunidade e um hub de jogos próprio (rankings, troféus, LisGaming Wrapped). App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP), o maior projeto que já construí sozinho.
 
 <div align="center">
 
@@ -83,7 +83,7 @@ App desktop de backup, restauro e gestão de servidores Discord — com um bot p
 
 </div>
 
-> Estes dois cartões vêm de um serviço público (github-readme-stats) que por vezes fica sobrecarregado e não carrega — se aparecerem partidos, é temporário do lado deles, não é preciso fazer nada.
+> Estes dois cartões vêm de um serviço público (github-readme-stats) que por vezes fica sobrecarregado e não carrega se aparecerem partidos, é temporário do lado deles, não é preciso fazer nada.
 
 <br>
 
