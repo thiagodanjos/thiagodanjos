@@ -1,0 +1,57 @@
+name: Perfil
+
+# Regenera as imagens de assets/ todos os dias (as estatísticas vêm da API do GitHub)
+# e sempre que o gerador muda. Só faz commit se alguma imagem mudar.
+#
+# Por omissão usa o GITHUB_TOKEN do próprio workflow, que só vê repositórios públicos.
+# Para as linguagens contarem também os repositórios privados, cria um token "fine-grained"
+# só de leitura (Repository access: All repositories · Contents: Read · Metadata: Read)
+# e guarda-o em Settings → Secrets and variables → Actions com o nome PERFIL_TOKEN.
+# Os nomes dos repositórios privados nunca aparecem na imagem — só somas por linguagem.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/perfil.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: perfil
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    name: Gerar as imagens do perfil
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Gerar
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERFIL_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/perfil.py
+
+      - name: Guardar se mudou
+        run: |
+          git add assets
+          if git diff --cached --quiet; then
+            echo "Sem alterações nas imagens."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza as imagens do perfil"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
