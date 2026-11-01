@@ -2,25 +2,26 @@
 
 <img src="./assets/abertura.svg" width="100%" alt="Abertura animada ao estilo do LisFilms: Thiago Anjos, estudante de Desenvolvimento Web e Multimédia em Leiria, criador do LisFilms, do LisSecurity e do LisDiscord" />
 
-<br />
+<br>
 
 <a href="https://www.linkedin.com/in/thiago-anjos-b50628376/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://lisfilms.pt"><img src="https://img.shields.io/badge/lisfilms.pt-1ED760?style=for-the-badge&logo=googlechrome&logoColor=000000" alt="lisfilms.pt" /></a>
-<a href="https://thiagodanjos.github.io/lisfilms-demo/"><img src="https://img.shields.io/badge/demo%20p%C3%BAblica-161A20?style=for-the-badge&logo=github&logoColor=white" alt="Demo pública do LisFilms" /></a>
+<a href="https://github.com/thiagodanjos/lissecurity"><img src="https://img.shields.io/badge/LisSecurity-161A20?style=for-the-badge&logo=windows&logoColor=1ED760" alt="LisSecurity" /></a>
 <img src="https://komarev.com/ghpvc/?username=thiagodanjos&label=visitas&color=1ed760&style=for-the-badge" alt="Visitas ao perfil" />
 
 </div>
 
 <br>
 
-## 👋 Olá, sou o Thiago
+Sou o **Thiago Anjos**, estudante de **Desenvolvimento Web e Multimédia** em Leiria. Gosto de levar
+uma ideia até ao fim: base de dados, API, interface, testes automáticos e publicação. Foi assim que
+nasceram os projetos da família **Lis**: uma rede social em produção, um cofre de senhas com
+criptografia moderna e um gestor de servidores Discord que não precisa de alojamento.
 
-Nascido e criado em **Mogi das Cruzes, São Paulo, Brasil**, vim para **Leiria, Portugal** aos 11 anos de idade, e já lá vão 8 anos desde essa grande mudança.
-**Estudante de Desenvolvimento Web e Multimédia, em Portugal**,
-a construir aplicações completas, do backend à interface, e a aprender algo novo em cada projeto.
+<img src="./assets/percurso.svg" width="100%" alt="Percurso: nasci em Mogi das Cruzes, São Paulo, Brasil; vivo em Leiria desde os 11 anos; concluí o Curso Profissional TGPSI com o LisFilms como PAP; estou a tirar o TeSP em Desenvolvimento Web e Multimédia na Universidade de Leiria e Oeste" />
 
 <details>
-<summary><b>🗺️ De Mogi das Cruzes a Leiria</b> · abre o mapa interativo (dá para arrastar e fazer zoom)</summary>
+<summary><b>🗺️ Ver o caminho no mapa</b> (interativo: arrasta e faz zoom)</summary>
 <br>
 
 ```geojson
@@ -75,39 +76,44 @@ a construir aplicações completas, do backend à interface, e a aprender algo n
 
 <br>
 
-## 🎓 Formação
-
-| | |
-|---|---|
-| **Atual** | TeSP em Desenvolvimento Web e Multimédia - Universidade de Leiria e Oeste |
-| **Concluído** | Curso Profissional de Técnico de Gestão e Programação de Sistemas Informáticos |
-
-<br>
-
 ## 🍿 Em cartaz
 
-<p align="center">
-  <a href="https://lisfilms.pt"><img src="./assets/cartaz-lisfilms.svg" width="32%" alt="Cartaz do LisFilms: a rede social de filmes, séries, animes e jogos. Abre lisfilms.pt" /></a>
-  <a href="#-lissecurity"><img src="./assets/cartaz-lissecurity.svg" width="32%" alt="Cartaz do LisSecurity: cofre pessoal de senhas e dados bancários, cifrado e sem internet. Leva à secção LisSecurity" /></a>
-  <a href="https://github.com/thiagodanjos/lisdiscord"><img src="./assets/cartaz-lisdiscord.svg" width="32%" alt="Cartaz do LisDiscord: backups, moderação e 14 mini-jogos para servidores Discord. Abre o repositório" /></a>
-</p>
-<p align="center"><sub>Cada cartaz é clicável.</sub></p>
-
-### 🎬 LisFilms
-
-A tua rede social de filmes, séries, animes e jogos: reviews, feed social, watchlist, coleções e maratonas, grupos e mensagens, prémios da comunidade e um hub de jogos próprio (rankings, troféus, LisGaming Wrapped). App desktop (Python + Tkinter), backend próprio (FastAPI + PostgreSQL) e versão web (React), com integração com a API da TMDB. Desenvolvido como Prova de Aptidão Profissional (PAP), o maior projeto que já construí sozinho.
-
-<div align="center">
-
-[![Visitar site oficial](https://img.shields.io/badge/-Visitar%20lisfilms.pt-1ED760?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://lisfilms.pt)
-[![Ver demo pública](https://img.shields.io/badge/-Ver%20demo%20p%C3%BAblica-121519?style=for-the-badge&logo=github&logoColor=white)](https://thiagodanjos.github.io/lisfilms-demo/)
-
-</div>
-
-O código da versão em produção é privado; a **[demo pública](https://github.com/thiagodanjos/lisfilms-demo)**, feita para portefólio, está disponível para consulta.
+<table>
+<tr>
+<td width="33%" align="center" valign="top"><a href="https://lisfilms.pt"><img src="./assets/cartaz-lisfilms.svg" width="100%" alt="Cartaz do LisFilms — abre lisfilms.pt" /></a></td>
+<td width="33%" align="center" valign="top"><a href="https://github.com/thiagodanjos/lissecurity"><img src="./assets/cartaz-lissecurity.svg" width="100%" alt="Cartaz do LisSecurity — abre a página para instalar" /></a></td>
+<td width="33%" align="center" valign="top"><a href="https://github.com/thiagodanjos/lisdiscord"><img src="./assets/cartaz-lisdiscord.svg" width="100%" alt="Cartaz do LisDiscord — abre o repositório" /></a></td>
+</tr>
+<tr>
+<td valign="top">
+<b>A rede social para quem vê filmes, séries e animes, e para quem joga.</b>
+Reviews, listas, maratonas, grupos e o hub de jogos LisGames. React, FastAPI e PostgreSQL;
+começou como a minha PAP e está em produção.
+<br><br>
+<a href="https://lisfilms.pt"><img src="https://img.shields.io/badge/Abrir-lisfilms.pt-1ED760?style=flat-square&labelColor=161A20" alt="Abrir lisfilms.pt" /></a>
+<a href="https://thiagodanjos.github.io/lisfilms-demo/"><img src="https://img.shields.io/badge/Demo-p%C3%BAblica-9AA3AD?style=flat-square&labelColor=161A20" alt="Demo pública" /></a>
+</td>
+<td valign="top">
+<b>Cofre de senhas e dados bancários para Windows.</b>
+Cifrado no teu PC com Argon2id e XChaCha20-Poly1305, núcleo em Rust, códigos 2FA e cópias no
+Google Drive. Sem conta e sem internet.
+<br><br>
+<a href="https://github.com/thiagodanjos/lissecurity/releases/latest"><img src="https://img.shields.io/badge/Descarregar-Windows-1ED760?style=flat-square&labelColor=161A20" alt="Descarregar o LisSecurity para Windows" /></a>
+<a href="https://github.com/thiagodanjos/lissecurity"><img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-9AA3AD?style=flat-square&labelColor=161A20" alt="Código do LisSecurity" /></a>
+</td>
+<td valign="top">
+<b>Gestão de servidores Discord a partir do PC.</b>
+Backups e restauro seletivo, moderação, sorteios e 14 mini-jogos com economia de moedas, com um
+bot próprio e sem alojamento.
+<br><br>
+<a href="https://github.com/thiagodanjos/lisdiscord"><img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-9AA2FF?style=flat-square&labelColor=161A20" alt="Repositório do LisDiscord" /></a>
+<a href="https://github.com/thiagodanjos/lisdiscord/releases/latest"><img src="https://img.shields.io/github/v/release/thiagodanjos/lisdiscord?style=flat-square&color=5865F2&labelColor=161A20&label=vers%C3%A3o" alt="Última versão do LisDiscord" /></a>
+</td>
+</tr>
+</table>
 
 <details>
-<summary><b>🧩 Como o LisFilms funciona por dentro</b> · diagrama interativo</summary>
+<summary><b>🧩 Como o LisFilms funciona por dentro</b> (diagrama interativo)</summary>
 <br>
 
 ```mermaid
@@ -128,50 +134,17 @@ flowchart LR
 
 </details>
 
-### 🔐 LisSecurity
-
-Cofre pessoal para senhas, dados bancários, cartões, notas seguras e códigos 2FA: uma app para Windows que funciona **sem internet**. Tudo é cifrado no próprio PC com **Argon2id** e **XChaCha20-Poly1305**, num núcleo em **Rust** sem código `unsafe`, com uma interface **Tauri + React** com a identidade do LisFilms. Bloqueia sozinho (inatividade, minimizar, suspensão, Win+L), limpa a área de transferência, faz cópias de segurança cifradas para o Google Drive e mostra os gastos a partir de extratos do banco, tudo guardado dentro do cofre.
-
-<details>
-<summary><b>🔍 O que tem por dentro</b></summary>
 <br>
 
-- Chave do cofre aleatória, protegida pela senha mestra (Argon2id calibrado no próprio PC) e, se quiseres, por uma chave de recuperação de 160 bits
-- Formato de ficheiro versionado e autenticado; gravação atómica, relida e verificada antes de substituir a anterior
-- A interface só recebe vistas mascaradas: os segredos ficam no processo em Rust e são apagados da memória (`zeroize`)
-- Gerador de senhas e frases-senha, deteção de senhas fracas e reutilizadas, códigos 2FA ao vivo (RFC 6238)
-- Importação de senhas (Chrome, Edge, Firefox, Bitwarden…) e de extratos (Revolut ou CSV genérico)
-- Testes unitários, de aceitação e ponta-a-ponta na app real a cada alteração
-- Ainda sem auditoria de segurança independente
-
-</details>
-
-O código é privado.
-
-### 🤖 LisDiscord
-
-App desktop de backup, restauro e gestão de servidores Discord com um bot próprio, sem hosting nem servidor externo. Backup/restauro seletivo de cargos, canais e permissões, agendamentos automáticos, comparação entre backups, moderação (banir, expulsar, mutar, bloquear canais), mensagens com embeds, sorteios, um sistema de pontos de Mov. Call com painel ao vivo, e 14 mini-jogos (trivia, forca, blackjack, jogo do galo, duelo, roleta, caça-níqueis, corrida e mais) com uma economia de moedas partilhada por servidor.
-
-<div align="center">
-
-[![Ver no GitHub](https://img.shields.io/badge/-Ver%20reposit%C3%B3rio-5865F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thiagodanjos/lisdiscord)
-[![Última versão](https://img.shields.io/github/v/release/thiagodanjos/lisdiscord?style=for-the-badge&color=5865F2&label=vers%C3%A3o)](https://github.com/thiagodanjos/lisdiscord/releases/latest)
-
-</div>
-
-<br>
-
-## 🛠️ Tecnologias
+## 🛠️ Ferramentas
 
 <img src="./assets/tecnologias.svg" width="100%" alt="Tecnologias: Python, TypeScript, JavaScript e Rust; React, Tailwind CSS, Vite e PWA; FastAPI, SQLAlchemy, PostgreSQL, Supabase e Firebase; Electron, Tauri, Tkinter e discord.js; Netlify, Render, GitHub Actions e Git" />
 
 <br>
 
-## 📊 Estatísticas
+## 📊 Atividade no GitHub
 
-<img src="./assets/estatisticas.svg" width="100%" alt="Estatísticas do GitHub de thiagodanjos: contribuições do último ano, sequência de dias, repositórios, seguidores, linguagens e ritmo semanal" />
-
-> Este painel é gerado aqui mesmo, todos os dias, por um GitHub Action ([`scripts/perfil.py`](scripts/perfil.py)) com dados da API do GitHub. Já não depende de serviços externos que ficam em baixo.
+<img src="./assets/estatisticas.svg" width="100%" alt="Estatísticas do GitHub de thiagodanjos, atualizadas todos os dias: contribuições do último ano, sequência de dias, repositórios, seguidores, linguagens e ritmo semanal" />
 
 <br>
 
@@ -179,6 +152,6 @@ App desktop de backup, restauro e gestão de servidores Discord com um bot próp
 
 <div align="center">
 
-📫 Contacta-me pelo **[LinkedIn](https://www.linkedin.com/in/thiago-anjos-b50628376/)**
+<a href="https://www.linkedin.com/in/thiago-anjos-b50628376/"><img src="https://img.shields.io/badge/Falar_comigo_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Falar comigo no LinkedIn" /></a>
 
 </div>

@@ -730,7 +730,7 @@ CARTAZES = {
         linhas=["Cofre pessoal de senhas e dados", "bancários. Cifrado e sem internet."],
         etiquetas=["Rust", "Tauri", "Argon2id"],
         faturacao=["UM PROJETO DE THIAGO ANJOS", "ARGON2ID · XCHACHA20-POLY1305 · APP PARA WINDOWS"],
-        chamada="Código privado · Windows",
+        chamada="Instalar para Windows  →",
         descricao="Cartaz do LisSecurity: cofre pessoal de senhas e dados bancários, cifrado localmente e sem internet.",
     ),
     "lisdiscord": dict(
@@ -822,6 +822,84 @@ def cartaz(chave: str, atraso: float) -> str:
         f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="17.25" fill="none" stroke="{cor}" stroke-opacity=".35" stroke-width="1.5"/>'
     )
     return documento(W, H, f"Lis{d['sufixo']}", d["descricao"], "".join(css), corpo)
+
+
+# --------------------------------------------------------------------------------------------
+# 2-A. Percurso (linha do tempo)
+# --------------------------------------------------------------------------------------------
+ETAPAS = [
+    ("map-pin", "ORIGEM", "Mogi das Cruzes", "São Paulo, Brasil · onde nasci"),
+    ("plane", "MUDANÇA", "Leiria, Portugal", "desde os 11 anos"),
+    ("graduation-cap", "CONCLUÍDO", "Curso Profissional TGPSI", "PAP: o LisFilms"),
+    ("code-xml", "A DECORRER", "TeSP Web e Multimédia", "Universidade de Leiria e Oeste"),
+]
+
+
+def percurso() -> str:
+    W, H = 860, 236
+    css = []
+    defs = [DEFS_COMUNS]
+    p = []
+    p.append(f'<rect x="28" y="30" width="4" height="22" rx="2" fill="{C["verde"]}"/>')
+    p.append(texto(42, 47, "Percurso", 16, 800, C["texto"]))
+    p.append(texto(W - 28, 47, "≈ 8 000 km entre a primeira e a segunda etapa", 10.5, 500, C["tenue"], "end"))
+    xs = [110 + i * (W - 220) / (len(ETAPAS) - 1) for i in range(len(ETAPAS))]
+    yl = 128
+    comp = xs[-1] - xs[0]
+    defs.append(f'<path id="linhaPercurso" d="M{n(xs[0])} {yl} H{n(xs[-1])}"/>')
+    css.append(
+        f"@keyframes desenhar{{from{{stroke-dashoffset:{comp:.0f};}}to{{stroke-dashoffset:0;}}}}"
+        "@keyframes onda{0%{opacity:.6;transform:scale(1);}100%{opacity:0;transform:scale(2.1);}}"
+        "@keyframes estalar{0%{opacity:0;transform:scale(.4);}70%{opacity:1;transform:scale(1.08);}100%{opacity:1;transform:none;}}"
+    )
+    p.append(f'<line x1="{n(xs[0])}" y1="{yl}" x2="{n(xs[-1])}" y2="{yl}" stroke="{C["borda2"]}" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>')
+    p.append(
+        f'<line x1="{n(xs[0])}" y1="{yl}" x2="{n(xs[-1])}" y2="{yl}" stroke="{C["verde"]}" stroke-width="2.4" stroke-linecap="round" '
+        f'stroke-dasharray="{comp:.0f}" style="animation:desenhar 2.4s cubic-bezier(.65,0,.35,1) .3s both"/>'
+    )
+    # um ponto de luz que volta a percorrer o caminho
+    p.append(
+        f'<circle r="4" fill="{C["verde2"]}" opacity="0"><animateMotion dur="5s" begin="3s" repeatCount="indefinite" '
+        'keyPoints="0;1;1" keyTimes="0;.7;1" calcMode="linear"><mpath href="#linhaPercurso"/></animateMotion>'
+        '<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.05;.66;.7;1" dur="5s" begin="3s" repeatCount="indefinite"/></circle>'
+    )
+    for i, ((ic, tag, tit, sub), x) in enumerate(zip(ETAPAS, xs)):
+        atraso = 0.3 + 2.4 * (x - xs[0]) / comp
+        atual = i == len(ETAPAS) - 1
+        cor_tag = C["verde"] if atual else C["suave"]
+        wt = FONTE.largura(tag, 8.5, 800, 1.6) + 20
+        no = []
+        if atual:
+            no.append(
+                f'<circle class="fb" cx="{n(x)}" cy="{yl}" r="22" fill="none" stroke="{C["verde"]}" stroke-width="1.5" '
+                'style="animation:onda 2.2s ease-out infinite"/>'
+            )
+        no.append(f'<circle cx="{n(x)}" cy="{yl}" r="22" fill="{C["verde_suave"] if atual else C["cartao"]}" stroke="{C["verde"]}" stroke-opacity="{1 if atual else .5}" stroke-width="1.5"/>')
+        no.append(icone(ic, x - 10, yl - 10, 20, C["verde"]))
+        p.append(f'<g class="fb" style="animation:estalar .55s cubic-bezier(.22,1,.36,1) {atraso:.2f}s both">{"".join(no)}</g>')
+        p.append(
+            f'<g style="animation:surgir .6s cubic-bezier(.22,1,.36,1) {atraso + 0.1:.2f}s both">'
+            f'<rect x="{n(x - wt / 2)}" y="{yl - 58}" width="{n(wt)}" height="20" rx="10" fill="{C["cartao"]}" stroke="{cor_tag}" stroke-opacity=".45"/>'
+            + texto(x + 0.8, yl - 44.5, tag, 8.5, 800, cor_tag, "middle", 1.6)
+            + texto(x, yl + 50, esc(tit), 13.5, 800, C["texto"], "middle")
+            + texto(x, yl + 68, esc(sub), 10.5, 500, C["tenue"], "middle")
+            + "</g>"
+        )
+    corpo = (
+        f"<defs>{''.join(defs)}</defs>"
+        f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="20" fill="{C["bg"]}" stroke="{C["borda"]}"/>'
+        f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="20" fill="url(#pontos)"/>' + "".join(p)
+    )
+    return documento(
+        W,
+        H,
+        "Percurso",
+        "Nasci em Mogi das Cruzes, São Paulo, Brasil; vivo em Leiria, Portugal, desde os 11 anos; concluí o Curso "
+        "Profissional de Técnico de Gestão e Programação de Sistemas Informáticos, com o LisFilms como PAP; estou a "
+        "tirar o TeSP em Desenvolvimento Web e Multimédia na Universidade de Leiria e Oeste.",
+        "".join(css),
+        corpo,
+    )
 
 
 # --------------------------------------------------------------------------------------------
@@ -1318,6 +1396,7 @@ def main() -> int:
     a = ap.parse_args()
 
     gravar("abertura.svg", abertura(), a.saida)
+    gravar("percurso.svg", percurso(), a.saida)
     for i, chave in enumerate(CARTAZES):
         gravar(f"cartaz-{chave}.svg", cartaz(chave, i * 0.15), a.saida)
     gravar("tecnologias.svg", tecnologias(), a.saida)
