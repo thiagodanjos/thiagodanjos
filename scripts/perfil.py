@@ -1083,6 +1083,22 @@ def fmt(v: int) -> str:
     return f"{v:,}".replace(",", " ")
 
 
+def dias_txt(v: int) -> str:
+    return f"{v} {'dia' if v == 1 else 'dias'}"
+
+
+def percentagem(p: float) -> str:
+    """Uma casa decimal, sem arredondar para 100 % nem para 0 % quando não é verdade."""
+    if p < 0.1:
+        return "<0,1%"
+    if p >= 100:
+        return "100%"
+    if p > 99.9:
+        return ">99,9%"
+    v = math.floor(p * 10) / 10 if p > 99 else round(p, 1)
+    return f"{v:.1f}%".replace(".", ",")
+
+
 def estatisticas(dados: dict) -> str:
     W, H = 860, 556
     css = []
@@ -1109,7 +1125,11 @@ def estatisticas(dados: dict) -> str:
     # cartões
     cartoes = [
         ("git-commit-horizontal", fmt(dados["total"]), "Contribuições", "nos últimos 12 meses"),
-        ("flame", f"{atual} {'dia' if atual == 1 else 'dias'}", "Sequência atual", f"melhor: {melhor} {'dia' if melhor == 1 else 'dias'}"),
+        (
+            ("flame", dias_txt(atual), "Sequência atual", f"melhor: {dias_txt(melhor)}")
+            if atual
+            else ("flame", dias_txt(melhor), "Melhor sequência", "dias seguidos a contribuir")
+        ),
         ("folder-git-2", fmt(dados["publicos"]), "Repositórios públicos", f"{fmt(dados['estrelas'])} {'estrela' if dados['estrelas'] == 1 else 'estrelas'}"),
         ("users", fmt(dados["seguidores"]), "Seguidores", f"no GitHub desde {dados['desde']}"),
     ]
@@ -1226,13 +1246,12 @@ def estatisticas(dados: dict) -> str:
         col, lin = i % 3, i // 3
         lx2 = bx + col * (bw / 3)
         ly2 = yl + 82 + lin * 28
-        pct = 100 * tam / soma
-        pct_txt = f"{pct:.1f}%".replace(".", ",") if pct < 10 else f"{pct:.0f}%"
+        pct_txt = percentagem(100 * tam / soma)
         p.append(
             f'<g style="animation:aparecer .6s ease-out {0.8 + i * 0.08:.2f}s both">'
             f'<circle cx="{n(lx2 + 5)}" cy="{ly2 - 4}" r="5" fill="{cor}"/>'
             + texto(lx2 + 16, ly2, esc(nome), 11.5, 700, C["texto"])
-            + texto(lx2 + 16 + FONTE.largura(nome, 11.5, 700) + 6, ly2, pct_txt, 10.5, 500, C["tenue"])
+            + texto(lx2 + 16 + FONTE.largura(nome, 11.5, 700) + 6, ly2, esc(pct_txt), 10.5, 500, C["tenue"])
             + "</g>"
         )
 
@@ -1268,7 +1287,7 @@ def estatisticas(dados: dict) -> str:
         W,
         H,
         "Estatísticas do GitHub",
-        f"{fmt(dados['total'])} contribuições nos últimos 12 meses; sequência atual de {atual} dias (melhor: {melhor}); "
+        f"{fmt(dados['total'])} contribuições nos últimos 12 meses; sequência atual de {dias_txt(atual)} (melhor: {dias_txt(melhor)}); "
         f"{dados['publicos']} repositórios públicos; {dados['seguidores']} seguidores; "
         f"linguagens: {', '.join(nome for nome, _ in topo)}.",
         "".join(css),
